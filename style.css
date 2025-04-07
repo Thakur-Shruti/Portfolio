@@ -1,0 +1,207 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #212121; /* Dark gray text for contrast */
+}
+
+h1, h2, h3 {
+    color: #00695c; /* Dark teal for headings */
+}
+
+a {
+    text-decoration: none;
+    color: #deeaeb; /* Teal link color */
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004d40; /* Darker teal on hover */
+}
+
+/* Make the header h1 text more visible */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white !important; /* Force white color with !important */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+header {
+    background-color: #00796b; /* Teal header background */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text */
+}
+
+.about-content .about-img {
+    margin-right: 20px; /* Adds space between the image and the paragraph */
+}
+
+.about-content p {
+    max-width: 600px; /* Restrict the paragraph width to fit the available space */
+    flex-grow: 1; /* Makes the paragraph take the remaining space next to the image */
+}
+
+section {
+    padding: 50px;
+    margin: 30px auto;
+    max-width: 1100px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #00695c;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+}
+
+.project-card {
+    background-color: #f1f8e9; /* Light greenish background */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #00796b;
+    font-size: 1.8em;
+    /* Optional: Add this to your CSS for a grid layout of project cards */
+#projects {
+    padding: 50px;
+}
+
+#projects .project-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #f1f8e9;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensure the module button is positioned at the bottom of each card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #00796b;
+}
+/* Styling for MODULE:1 button */
+.module-button {
+    background-color: #00796b; /* Teal background color */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.module-button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.module-button:focus {
+    outline: none; /* Remove outline when focused */
+}
+
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #00796b;
+    font-size: 1.1em;
+    background-color: #f1f8e9; /* Soft greenish background for inputs */
+}
+
+form button {
+    background-color: #00796b; /* Teal button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
